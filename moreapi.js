@@ -7,5 +7,7 @@ const handleLoadUser = () => {
 
 
 const displayUser = (users) => {
-    console.log(users); 
+    users.forEach(user => {
+        console.log(user.name); 
+    });
 }
