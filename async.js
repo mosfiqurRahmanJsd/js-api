@@ -14,16 +14,40 @@
 // }
 
 
-const handleUser2 = async () => {
-    try {
-        const response = await fetch('https://jsonplaceholder.typicode.com/users')
-        const data = await response.json()
-        console.log(data);
-    }
-    catch {
-        console.log('Hello')
-    }
+// const handleUser2 = async () => {
+//     try {
+//         const response = await fetch('https://jsonplaceholder.typicode.com/users')
+//         const data = await response.json()
+//         console.log(data);
+//     }
+//     catch {
+//         console.log('Hello')
+//     }
+// }
+
+
+// handleUser2(); 
+
+
+console.log('hero'); 
+console.log('hero'); 
+console.log('hero'); 
+function sum() {
+    console.log('Hello'); 
+}
+sum(); 
+
+
+
+const fetchData = () => {
+    return new Promise((resolve, reject) => {
+        const status = true; 
+        if(status) {
+            resolve({name: "hero"})
+        } else {
+            reject('server error')
+        }
+    })
 }
 
-
-handleUser2(); 
+console.log(fetchData()); 
