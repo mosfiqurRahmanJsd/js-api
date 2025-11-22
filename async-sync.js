@@ -11,14 +11,12 @@ const loadData = async () => {
     console.log(data); 
     
 
-
     const result = 10 + 10;
     console.log(result)
     console.log('ami third')
     }
     catch {
         console.log(error); 
-        
     }
 }
 
